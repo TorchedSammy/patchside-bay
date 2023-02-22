@@ -1,26 +1,12 @@
-name: Patchside YouTube
+name: Patchside
 
 on:
   push
 
 jobs:
   build:
-    name: Compile Windows parsers
+    name: YouTube
     runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      matrix:
-        parser:
-          - tree-sitter/tree-sitter-c
-          - tree-sitter/tree-sitter-cpp
-          - the-mikedavis/tree-sitter-diff
-          - tree-sitter/tree-sitter-go
-          - camdencheek/tree-sitter-go-mod
-          - MunifTanjim/tree-sitter-lua
-          - tree-sitter/tree-sitter-rust
-    defaults:
-      run:
-        shell: msys2 {0}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-java@v3
