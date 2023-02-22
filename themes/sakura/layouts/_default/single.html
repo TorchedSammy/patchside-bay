@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+	<header>
+		<h1 style='margin-bottom: 0;'>{{ .Title }}</h1>
+		<em><small>
+			<div class='post-metadata'>
+			</div>
+		</small></em>
+		{{ .Page.TableOfContents }}
+	</header>
+	{{- .Content -}}
+</article>
+{{ end }}

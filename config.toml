@@ -1,0 +1,15 @@
+baseURL = "https://sammy.is-a.dev/patchside-bay"
+title = "Patchside Bay"
+theme = "sakura"
+languageCode = "en-US"
+enableInlineShortcodes = true
+
+[params]
+  lightSakura = "sakura"
+  darkSakura = "sakura-vader"
+
+[permalinks]
+  blogs = "/:title/"
+
+[markup.goldmark.renderer]
+  unsafe = true
