@@ -1,6 +1,3 @@
-# torchedsammy.github.io
-It's just my personal website. Link here: https://sammy.is-a.dev/
+# Patchside Bay
 
-# License
-My website is MIT Licensed.  
-[Read here](LICENSE) for more info.  
+Build repo for personal ReVanced APKs, distributed nicely.
