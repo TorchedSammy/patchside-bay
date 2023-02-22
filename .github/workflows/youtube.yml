@@ -5,7 +5,6 @@ on:
 
 jobs:
   build:
-    name: Compile Windows parsers
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,10 +17,10 @@ jobs:
       - name: Download ReVanced Tools
         run: ./scripts/revanced.sh
       - name: Patch YouTube
-        run: java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m patchside/integrations.apk --options patchside/options/youtube.toml \
-          -i theme \
-          -i custom-branding \
-          -i microg-support \
+        run: java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m patchside/integrations.apk --options patchside/options/youtube.toml
+          -i theme
+          -i custom-branding
+          -i microg-support
           -i sponsorblock
       - uses: actions/upload-artifact@v3
         with:
