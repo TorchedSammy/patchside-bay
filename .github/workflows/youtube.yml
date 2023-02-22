@@ -39,7 +39,6 @@ jobs:
           -i return-youtube-dislike
           -i seekbar-tapping
           -i sponsorblock
-          -i theme
           -i video-ads
       - uses: actions/upload-artifact@v3
         with:
