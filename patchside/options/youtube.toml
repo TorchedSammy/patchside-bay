@@ -2,6 +2,6 @@
 appName = "Patchside YouTube"
 
 [theme]
-darkThemeBackgroundColor = "@android:color/system_neutral2_800"
+darkThemeBackgroundColor = "@android:color/black"
 lightThemeBackgroundColor = "@android:color/white"
 darkThemeSeekbarColor = "@android:color/system_accent1_200"
