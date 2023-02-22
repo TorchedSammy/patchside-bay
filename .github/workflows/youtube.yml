@@ -1,11 +1,11 @@
-name: Patchside
+name: Patchside YouTube
 
 on:
   push
 
 jobs:
   build:
-    name: YouTube
+    name: Compile Windows parsers
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,7 +14,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Download ReVanced Tools
-        run: ./scripts/revanced-cli.sh
+        run: ./scripts/revanced.sh
       - name: Patch YouTube
         run: |
           java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m patchside/integrations.apk --options patchside/options/youtube.toml
