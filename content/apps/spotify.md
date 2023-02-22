@@ -9,3 +9,5 @@ relaxing on the patchbay.
 
 Patchbay Spotify is a distribution of XManager + Revanced Spotify
 featuring either Material You (dyanmic) colors or plain black/AMOLED.
+
+Spotify is coming soonTM.
