@@ -23,5 +23,28 @@ Remember that this is simply a distribution of [ReVanced] for my personal
 tastes, but it's still general enough. If you want other things, patch
 up yourself.
 
-To download, [go here](https://github.com/TorchedSammy/patchside-bay/actions/runs/4238864228)
-and tap/click on `patchside-youtube.apk`.
+See the table below for downloads.
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Version</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><a href="https://github.com/TorchedSammy/patchside-bay/actions/runs/4238864228">Patchside YouTube</a></th>
+<th>18.03.36</th>
+<th>YouTube with Patchside (ReVanced) patches</th>
+</tr>
+<tr>
+<th>Patchside YouTube (Dynamic Colors)</th>
+<th>18.03.36</th>
+<th>YouTube with Patchside (ReVanced) patches plus Material You - Coming soon</th>
+</tr>
+</tbody>
+</table>
+
+[ReVanced]: https://revanced.app
