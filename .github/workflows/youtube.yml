@@ -16,8 +16,12 @@ jobs:
           java-version: '17'
       - name: Download ReVanced Tools
         run: ./scripts/revanced.sh
+      - uses: actions/checkout@v3
+        with:
+          ssh-key: ${{ secrets.KEYSTORE_DEPLOY_KEY }}
+          repository: TorchedSammy/patchside-keystore
       - name: Patch YouTube
-        run: java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m integrations.apk --options patchside/options/youtube.toml --exclusive
+        run: java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m integrations.apk --options patchside/options/youtube.toml --exclusive --keystore patchside.keystore
           -i custom-branding
           -i custom-video-speed
           -i disable-auto-player-popup-panels
