@@ -1,0 +1,33 @@
+name: Patchside Twitter
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Download ReVanced Tools
+        run: ./scripts/revanced.sh
+      - uses: actions/checkout@v3
+        with:
+          repository: TorchedSammy/patchside-keystore
+          token: ${{ secrets.KEYSTORE_TOKEN }}
+          path: keystore
+      - name: Patch YouTube
+        run: java -jar revanced-cli.jar -a patchside/apks/twitter.apk -b revanced-patches.jar -c -o patchside-twitter.apk -m integrations.apk --exclusive --keystore keystore/patchside.keystore
+          -i dynamic-color
+          -i hide-ads
+          -i monochrome-icon
+      - uses: actions/upload-artifact@v3
+        with:
+          name: patchside-twitter.apk
+          path: |
+            patchside-twitter.apk

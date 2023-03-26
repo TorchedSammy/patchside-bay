@@ -1,1 +1,2 @@
 patchside/apks/youtube.apk filter=lfs diff=lfs merge=lfs -text
+patchside/apks/twitter.apk filter=lfs diff=lfs merge=lfs -text
