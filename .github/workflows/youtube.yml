@@ -23,18 +23,22 @@ jobs:
           path: keystore
       - name: Patch YouTube
         run: java -jar revanced-cli.jar -a patchside/apks/youtube.apk -b revanced-patches.jar -c -o patchside-youtube.apk -m integrations.apk --options patchside/options/youtube.toml --exclusive --keystore keystore/patchside.keystore
+          -i client-spoof
+          -i copy-video-url
           -i custom-branding
+          -i custom-video-buffer
           -i custom-video-speed
-          -i disable-auto-player-popup-panels
-          -i disable-startup-shorts-player
+          -i disable-player-popup-panels
+          -i disable-shorts-on-startup
           -i downloads
           -i general-ads
+          -i hdr-auto-brightness
           -i hide-breaking-news-shelf
           -i hide-cast-button
+          -i hide-floating-microphone-button
           -i hide-create-button
           -i hide-watch-in-vr
           -i hide-watermark
-          -i microg-support
           -i minimized-playback
           -i old-quality-layout
           -i open-links-directly
@@ -44,7 +48,10 @@ jobs:
           -i return-youtube-dislike
           -i seekbar-tapping
           -i sponsorblock
+          -i spoof-app-version
+          -i spoof-signature-verification
           -i theme
+          -i vanced-microg-support
           -i video-ads
       - uses: actions/upload-artifact@v3
         with:
