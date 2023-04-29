@@ -35,13 +35,13 @@ See the table below for downloads.
 </thead>
 <tbody>
 <tr>
-<th><a href="https://github.com/TorchedSammy/patchside-bay/actions/runs/4238864228">Patchside YouTube</a></th>
-<th>18.03.36</th>
+<th><a href="https://github.com/TorchedSammy/patchside-bay/actions/runs/4841120440">Patchside YouTube</a></th>
+<th>18.15.40</th>
 <th>YouTube with Patchside (ReVanced) patches</th>
 </tr>
 <tr>
 <th>Patchside YouTube (Dynamic Colors)</th>
-<th>18.03.36</th>
+<th>18.15.40</th>
 <th>YouTube with Patchside (ReVanced) patches plus Material You - Coming soon</th>
 </tr>
 </tbody>
