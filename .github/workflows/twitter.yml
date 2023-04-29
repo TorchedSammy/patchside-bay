@@ -21,7 +21,7 @@ jobs:
           repository: TorchedSammy/patchside-keystore
           token: ${{ secrets.KEYSTORE_TOKEN }}
           path: keystore
-      - name: Patch YouTube
+      - name: Patch Twitter
         run: java -jar revanced-cli.jar -a patchside/apks/twitter.apk -b revanced-patches.jar -c -o patchside-twitter.apk -m integrations.apk --exclusive --keystore keystore/patchside.keystore
           -i dynamic-color
           -i hide-ads
